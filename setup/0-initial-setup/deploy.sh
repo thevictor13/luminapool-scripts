@@ -29,6 +29,10 @@ echo "$LP_SHARED_P9_MOUNT_TAG                         $LP_SHARED   9p    trans=v
 echo "$LP_NVME_DEV                          $LP_STORAGE  xfs   defaults,noatime 0 2" >> /etc/fstab
 mount -a
 
+
+git config --global user.email "$LP_GIT_EMAIL"
+git config --global user.name "$LP_GIT_NAME"
+
 }
 
 install_prerequisite() {
