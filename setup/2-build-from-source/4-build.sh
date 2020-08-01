@@ -1,3 +1,9 @@
+if [ $# -eq 0 ]
+  then
+    echo "Please provide the tag (version number) used to checkout cardano-node"
+    exit;
+fi
+
 cd $LP_HOME
 
 cd cardano-node
