@@ -10,6 +10,10 @@ main() {
 #install_prerequisite "cifs-utils"
 
 install_prerequisite "mc"
+install_prerequisite "jq"
+install_prerequisite "chrony"
+
+sudo cp $LP_SCRIPTS/setup/0-initial-setup/chrony.conf /etc/chrony
 
 mkdir $LP_SHARED $LP_STORAGE
 
